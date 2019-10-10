@@ -1,11 +1,7 @@
 <html>
 
-    <header>
-        
-            <script src="jquery-3.4.1.min.js"></script> <!--Where import goes-->
-    </header>
-
     <head>
+        <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
         <title>Welcome to my page!</title>
 
         <style>
@@ -33,7 +29,7 @@
             <p id="example"></p>
             <img src="/Portfolio/about-me.jpg">
             <a href="/SahersHome">Home Page</a>
-            <button class="Submit"></button>
+            <button class="Submit">Submit</button>
         </div>
     </body>
     
@@ -41,11 +37,11 @@
     <script>
         var Name = "Saher Ahmad";
         $("#example").text(Name);
-        $("example").css({"font-size":"25px", "color":"purple"});
+        $("#example").css({"font-size":"25px", "color":"purple"});
 
         // Event Handlers -> click, blur, change
-        $('.Submit').click(function() {
-            $("example").css({"font-size":"50px", "color":"red"});
+        $('#example').click(function() {
+            $("div").remove();
         });
     
     </script> 
