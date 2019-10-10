@@ -1,0 +1,66 @@
+<html>
+
+    <header>
+        
+            <script src="jquery-3.4.1.min.js"></script> <!--Where import goes-->
+    </header>
+
+    <head>
+        <title>Welcome to my page!</title>
+
+        <style>
+            body{
+                background-color: rgb(181, 201, 204);}
+
+            h1{          
+                text-align:center;           
+                font-size: 45px;
+                font-family: verdana;
+                Color: rgb(52, 51, 90);
+                border: 0.5px;}
+            p{
+                font-size: 30px;
+                Color: rgb(86, 79, 143);}
+        
+        </style>
+
+    </head>
+    
+    <body>
+        <div id="header" style="position: absolute; top: 10; left: 10; width: 95%;">
+            <h1>About Me</h1>
+            <h2>This page is an introduction towards myself. Find out more about me by reading!</h2>
+            <p id="example"></p>
+            <img src="/Portfolio/about-me.jpg">
+            <a href="/SahersHome">Home Page</a>
+        </div>
+    </body>
+    
+
+    <script>
+        var Name = "Saher Ahmad";    
+        document.getElementById("example").innerHTML = Name;
+        document.getElementById("example").style.fontSize = "25px";
+        document.getElementById("example").style.color = "purple";
+
+        //var carName = "Hyundai";
+        //document.getElementById("example").innerHTML = carName;
+
+        //var year = "2009";
+        //document.getElementById("example").innerHTML = year;
+    
+    </script> 
+
+</html>
+
+<!--
+    1. Pass in variables in about me page. 
+    2. Put a header and picture on page
+    3. on div put id on them
+    4. import jquery 
+    5. use id with jquery to make a button on page to change the page, 
+        hint: window.location.origin -> "www.website.com" + "/SahersHome"
+        To change website: window.location.href = new link   
+    6. Add CSS designs
+    7. push to github
+-->
