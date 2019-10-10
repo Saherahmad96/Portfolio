@@ -24,25 +24,35 @@
     
     <body>
         <div id="header" style="position: absolute; top: 10; left: 10; width: 95%;">
+            <div class="test">{{name}}</div>
             <h1>About Me</h1>
             <h2>This page is an introduction towards myself. Find out more about me by reading!</h2>
             <p id="example"></p>
             <img src="/Portfolio/about-me.jpg">
-            <a href="/SahersHome">Home Page</a>
             <button class="Submit">Submit</button>
         </div>
     </body>
     
 
     <script>
-        var Name = "Saher Ahmad";
-        $("#example").text(Name);
+        var element_text = $(".test").text();   // This variable
+
+        $("#example").text(element_text);
         $("#example").css({"font-size":"25px", "color":"purple"});
 
         // Event Handlers -> click, blur, change
         $('#example').click(function() {
             $("div").remove();
         });
+
+        // $() -> This is a selector. It select an element in the dom
+        // $("#elementID") -> Use # for element id 
+        // $(".elementClass") -> Use # for element class
+        // Jquery make a function run on a select. Example -> $("button").click() makes a button do something when its clicked
+
+        //
+
+
     
     </script> 
 
@@ -58,4 +68,16 @@
         To change website: window.location.href = new link   
     6. Add CSS designs
     7. push to github
+-->
+
+<!-- HW DAY 2
+    1. Pass in 3 python variabless into about me page and put them in different elements. {{variable}} | DO NOT USE THIS IN JAVASCRIPT
+    2. Fix the picture source on this page
+    3. use id with jquery to make a button on page to change the page, 
+        hint: window.location.origin -> "www.website.com" + "/SahersHome"
+        To change website: window.location.href = new link   
+    4. Add CSS designs
+    5. push to github
+    6. Use Flexbox css to arrange the page in middle
+    7. For Python sign up for google maps api and display a map of your house address on about me page.
 -->
