@@ -32,13 +32,23 @@
             <h2>This page is an introduction towards myself. Find out more about me by reading!</h2>
             <p id="example"></p>
             <img src="/Portfolio/about-me.jpg">
-            <a href="/SahersHome">Home Page</a>
+            <button class="Submit"><a href="/SahersHome">Home Page</a></button>
         </div>
     </body>
     
 
     <script>
-        var Name = "Saher Ahmad";    
+        var Name = "Saher Ahmad";
+        $("#example").text(Name);
+        $("example").css({"font-size":"25px", "color":"purple"});
+
+        // Event Handlers -> click, blur, change
+        $('.Submit').on('click', function() {
+            $("example").css({"font-size":"50px", "color":"red"});
+        });
+
+
+
         document.getElementById("example").innerHTML = Name;
         document.getElementById("example").style.fontSize = "25px";
         document.getElementById("example").style.color = "purple";
